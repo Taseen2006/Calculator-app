@@ -1,7 +1,7 @@
 def main():
     print("Welcome to the calculator app!")
     while True:
-        calculation = input("Enter your calculation:")
+        calculation = input("Enter your calculation starting with 2 numbers:")
         print(f'calulation is ' + calculation)
         splitted = calculation.split()
         print(splitted)
@@ -19,7 +19,7 @@ def main():
             print("invalid operator")
 
         print("answer is: " + str(answer))
-        resume = input("would you like to continue? Y or N")
+        resume = input("would you like to continue? Y or N: ")
         if resume == "N":
             break
 
